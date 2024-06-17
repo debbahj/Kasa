@@ -8,7 +8,7 @@ function Home() {
     <div>
       <Header />
       <Banner />
-      Home
+      <h1>Hello</h1>
       <Footer />
     </div>
   )
