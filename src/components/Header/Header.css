@@ -1,1 +1,15 @@
-/*# sourceMappingURL=Header.css.map */
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav--list {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  font-size: 12px;
+  font-weight: 500;
+}
+.header__nav--list:visited {
+  color: green;
+}/*# sourceMappingURL=Header.css.map */
