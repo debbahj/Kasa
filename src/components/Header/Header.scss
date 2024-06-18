@@ -3,9 +3,8 @@
 .header {
   width: 100%;
   &__container {
-    display: flex;
+    @include flex-center(row);
     justify-content: space-between;
-    align-items: center;
   }
   &__logo {
     width: 145px;
@@ -14,11 +13,9 @@
 
   &__nav {
     &--list {
-      display: flex;
+      @include flex-center(row);
+      @include font($text-xs);
       gap: 25px;
-      list-style: none;
-      font-size: 0.75em;
-      font-weight: 500;
 
       & a:visited {
         color: #000;
@@ -31,9 +28,8 @@
   .header {
     &__nav {
       &--list {
-        font-size: 1.5em;
+        @include font($text-2xl);
       }
     }
   }
-
 }

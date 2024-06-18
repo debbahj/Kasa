@@ -1,27 +1,30 @@
-:root {
-  max-width: 1440px;
-  max-height: 100vh;
-  margin: 0 auto;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-}
-
-*, *::before, *::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: inherit;
-}
-
-*:hover {
-  outline: 1px solid red;
-}
-
 @font-face {
   font-family: "Montserrat", "sans-serif";
   font-weight: 400 500 700;
   font-display: swap;
   src: url(./assets/fonts/Montserrat/montserrat-variablefont_wght-webfont.woff) format("woff");
   src: url(./assets/fonts/Montserrat/montserrat-variablefont_wght-webfont.woff2) format("woff2");
+}
+*:hover {
+  outline: 1px solid red;
+}
+
+:root {
+  max-width: 1440px;
+  max-height: 100vh;
+  margin: 0 auto;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  list-style: none;
 }/*# sourceMappingURL=index.css.map */

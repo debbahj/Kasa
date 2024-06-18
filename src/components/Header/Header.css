@@ -1,15 +1,33 @@
+.header {
+  width: 100%;
+}
 .header__container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  width: 145px;
+  height: 45px;
 }
 .header__nav--list {
   display: flex;
-  gap: 25px;
-  list-style: none;
-  font-size: 12px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75em;
   font-weight: 500;
+  gap: 25px;
 }
-.header__nav--list:visited {
-  color: green;
+.header__nav--list a:visited {
+  color: #000;
+}
+
+@media (width > 375px) {
+  .header__nav--list {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
 }/*# sourceMappingURL=Header.css.map */

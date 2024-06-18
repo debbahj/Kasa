@@ -1,11 +1,11 @@
+@use '../../assets/style/index' as *;
+
 .footer {
   &__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    background-color: black;
-    padding: 50px 0;
+    @include flex-center(column);
+    color: $footer-text-color;
+    background-color: $footer-bg-color;
+    padding: 50px;
     gap: 10px;
     width: 100%;
   }
@@ -16,22 +16,25 @@
   }
 
   &__copyright {
-    font-size: 0.75em;
-    font-weight: 500;
+    @include font($text-xs);
     text-align: center;
     text-wrap: balance;
     width: 130px;
   }
 }
 
-@media (width > 375px) {
+@media (width > $mobile) {
   .footer {
     &__container {
       padding: 25px;
     }
 
+    &__logo {
+      margin: 20px;
+    }
+
     &__copyright {
-      font-size: 1.5em;
+      @include font($text-2xl);
       text-wrap: nowrap;
       width: 100%;
     }
