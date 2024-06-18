@@ -1,3 +1,5 @@
+@use '../../assets/style/index' as *;
+
 .header {
   width: 100%;
   &__container {
@@ -15,7 +17,7 @@
       display: flex;
       gap: 25px;
       list-style: none;
-      font-size: 12px;
+      font-size: 0.75em;
       font-weight: 500;
 
       & a:visited {
@@ -23,4 +25,15 @@
       }
     }
   }
+}
+
+@media (width > $mobile) {
+  .header {
+    &__nav {
+      &--list {
+        font-size: 1.5em;
+      }
+    }
+  }
+
 }
