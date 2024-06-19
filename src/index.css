@@ -27,4 +27,11 @@
   margin: 0;
   box-sizing: inherit;
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+a.active {
+  text-decoration: underline;
 }/*# sourceMappingURL=index.css.map */

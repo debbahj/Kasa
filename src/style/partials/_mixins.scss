@@ -17,9 +17,9 @@
   font-weight: $weight;
 }
 
-@mixin flex-center($flex-direction) {
+@mixin flex($flex-direction: row, $justify: center, $align: center) {
   display: flex;
   flex-direction: $flex-direction;
-  justify-content: center;
-  align-items: center;
+  justify-content: $justify;
+  align-items: $align;
 }

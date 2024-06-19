@@ -1,4 +1,4 @@
-@use './assets/style/index' as *;
+@use './style/index' as *;
 
 @font-face {
   font-family: 'Montserrat', 'sans-serif';
@@ -34,4 +34,11 @@
   box-sizing: inherit;
 
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+  &.active {
+    text-decoration: underline;
+  }
 }

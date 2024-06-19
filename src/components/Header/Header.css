@@ -4,9 +4,8 @@
 .header__container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 .header__logo {
   width: 145px;
@@ -17,17 +16,18 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 0.75em;
+  font-size: 0.75rem;
   font-weight: 500;
   gap: 25px;
 }
+.header__nav--list a,
 .header__nav--list a:visited {
   color: #000;
 }
 
-@media (width > 375px) {
+@media (width > 768px) {
   .header__nav--list {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 500;
   }
 }/*# sourceMappingURL=Header.css.map */

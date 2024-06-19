@@ -1,10 +1,9 @@
-@use '../../assets/style/index' as *;
+@use '../../style/index' as *;
 
 .header {
   width: 100%;
   &__container {
-    @include flex-center(row);
-    justify-content: space-between;
+    @include flex(row, space-between);
   }
   &__logo {
     width: 145px;
@@ -13,18 +12,19 @@
 
   &__nav {
     &--list {
-      @include flex-center(row);
+      @include flex();
       @include font($text-xs);
       gap: 25px;
 
-      & a:visited {
+      & a,
+      a:visited {
         color: #000;
       }
     }
   }
 }
 
-@media (width > $mobile) {
+@media (width > $tablet) {
   .header {
     &__nav {
       &--list {

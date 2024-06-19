@@ -1,0 +1,24 @@
+@use '../style/index' as *;
+
+.app-layout {
+  @include flex(column, space-between);
+  width: 100%;
+  min-height: 100dvh;
+
+  header,
+  main,
+  footer {
+    width: 100%;
+  }
+
+  main {
+    flex: 1;
+  }
+  & .wrapper {
+    padding: 50px 100px;
+    width: 100%;
+    gap: 50px;
+    @include flex(column, start, center);
+    flex: 1;
+  }
+}

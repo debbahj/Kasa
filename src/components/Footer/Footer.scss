@@ -1,8 +1,8 @@
-@use '../../assets/style/index' as *;
+@use '../../style/index' as *;
 
 .footer {
   &__container {
-    @include flex-center(column);
+    @include flex(column);
     color: $footer-text-color;
     background-color: $footer-bg-color;
     padding: 50px;
@@ -23,7 +23,7 @@
   }
 }
 
-@media (width > $mobile) {
+@media (width > $tablet) {
   .footer {
     &__container {
       padding: 25px;
