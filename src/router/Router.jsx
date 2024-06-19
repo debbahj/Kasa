@@ -9,6 +9,7 @@ import Footer from '../components/Footer/Footer'
 
 const Router = () => {
   return (
+		//! TODO: DEL DIV
     <div>
       <BrowserRouter>
         <Routes>
@@ -29,7 +30,7 @@ const Router = () => {
           </Route>
         </Routes>
       </BrowserRouter>
-      <div //TODO: DELETE
+      <div //! TODO: DELETE
         id="debug"
         style={{
           position: 'fixed',

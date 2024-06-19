@@ -1,6 +1,6 @@
 import './Header.scss'
 import { NavLink } from 'react-router-dom'
-import Dcn from '../HOC/displayClassName/DisplayClassName'
+import Dcn from '../HOC/displayClassName/DisplayClassName' //! TODO: DEL + BALISE <Dcn> EN DESSOUS
 const logo = './assets/images/logo.svg'
 
 function Header() {
