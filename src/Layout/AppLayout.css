@@ -23,4 +23,9 @@
   justify-content: start;
   align-items: center;
   flex: 1;
+}
+@media (width < 768px) {
+  .app-layout .wrapper {
+    padding: 20px;
+  }
 }/*# sourceMappingURL=AppLayout.css.map */

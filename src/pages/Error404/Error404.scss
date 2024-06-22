@@ -1,0 +1,44 @@
+@use '../../style/index' as *;
+
+.error-404 {
+  @include flex(column, center, center);
+  gap: 140px;
+
+  &__img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+
+  &__text {
+    @include font($text-4xl);
+    color: $primary-color;
+    text-align: center;
+  }
+
+  &__link {
+    @include font($text-lg);
+    text-decoration: underline;
+    margin-bottom: 100px;
+
+    &:visited {
+      color: black;
+    }
+  }
+}
+
+@media (width < $tablet) {
+  .error-404 {
+    gap: 115px;
+    
+    &__img {
+      max-width: 200px;
+    }
+    &__text {
+      @include font($text-lg);
+    }
+    &__link {
+      @include font($text-sm);
+    }
+  }
+}

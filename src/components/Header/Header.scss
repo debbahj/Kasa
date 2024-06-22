@@ -6,7 +6,8 @@
     @include flex(row, space-between);
   }
   &__logo {
-    width: 145px;
+    width: 100%;
+    max-width: 145px;
     height: 45px;
   }
 

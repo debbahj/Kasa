@@ -1,6 +1,5 @@
 import './Header.scss'
 import { NavLink } from 'react-router-dom'
-import Dcn from '../HOC/displayClassName/DisplayClassName' //! TODO: DEL + BALISE <Dcn> EN DESSOUS
 const logo = './assets/images/logo.svg'
 
 function Header() {
@@ -12,14 +11,10 @@ function Header() {
         <nav className="header__nav">
           <ul className="header__nav--list">
             <li>
-              <Dcn>
-                <NavLink to="/">Accueil</NavLink>
-              </Dcn>
+              <NavLink to="/">Accueil</NavLink>
             </li>
             <li>
-              <Dcn>
-                <NavLink to="/about">A Propos</NavLink>
-              </Dcn>
+              <NavLink to="/about">A Propos</NavLink>
             </li>
           </ul>
         </nav>
