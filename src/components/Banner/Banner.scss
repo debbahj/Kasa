@@ -35,3 +35,14 @@
     background: #000000a0;
   }
 }
+
+@media (width < $tablet) {
+  .banner {
+    height: 111px;
+
+    &__title {
+      @include flex(row, start, center);
+      @include font($text-2xl, $font-bold);
+    }
+  }
+}
