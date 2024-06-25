@@ -13,9 +13,9 @@ const Collapse = ({ title, content }) => {
     <div className="collapse">
       <button className="collapse__button" onClick={handleClick} type="button">
         <p className="collapse__title">{title}</p>
-        <i className="collapse__icon fas fa-chevron-up"></i>
+        <i className={`collapse__icon fas fa-chevron-up ${isOpen ? 'anim-rotate' : ''}`}></i>
       </button>
-      {isOpen && <div className="collapse__content">{content}</div>}
+      {isOpen && <div className={`collapse__content ${isOpen ? 'anim-open' : ''}`}>{content}</div>}
     </div>
   )
 }

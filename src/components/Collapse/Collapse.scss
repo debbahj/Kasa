@@ -1,6 +1,11 @@
 @use '../../style/index' as *;
 
 .collapse {
+  &-container {
+    @include flex(column, normal, normal);
+    gap: 20px;
+  }
+
   &__button {
     @include flex(row, space-between);
     cursor: pointer;
@@ -19,6 +24,7 @@
 
   &__icon {
     @include font($text-base, $font-bold);
+    transition: transform 0.3s;
   }
 
   &__content {
@@ -33,8 +39,45 @@
   }
 }
 
+// ANIMATIONS
+.anim-rotate {
+  transform: rotate(-180deg);
+}
+
+.collapse__content.anim-open {
+  animation: ShowContent 0.3s;
+}
+
+@keyframes ShowContent {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// MEDIA QUERIES
 @media (width > $tablet) {
-  // fontsize
-  // padding
-  // height ?
+  .collapse {
+    &-container {
+      padding: 0 108px;
+    }
+
+    &__button {
+      height: 52px;
+      padding: 10px 15px;
+    }
+
+    &__title {
+      @include font($text-2xl, $font-bold);
+    }
+
+    &__icon {
+      @include font($text-2xl, $font-bold);
+    }
+  }
 }

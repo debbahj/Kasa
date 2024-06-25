@@ -1,3 +1,10 @@
+.collapse-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: normal;
+  gap: 20px;
+}
 .collapse__button {
   display: flex;
   flex-direction: row;
@@ -19,6 +26,7 @@
 .collapse__icon {
   font-size: 1rem;
   font-weight: 700;
+  transition: transform 0.3s;
 }
 .collapse__content {
   font-size: 0.75rem;
@@ -30,5 +38,41 @@
     font-size: 1.125rem;
     font-weight: 400;
     padding: 16px 20px 20px 20px;
+  }
+}
+
+.anim-rotate {
+  transform: rotate(-180deg);
+}
+
+.collapse__content.anim-open {
+  animation: ShowContent 0.3s;
+}
+
+@keyframes ShowContent {
+  from {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (width > 768px) {
+  .collapse-container {
+    padding: 0 108px;
+  }
+  .collapse__button {
+    height: 52px;
+    padding: 10px 15px;
+  }
+  .collapse__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .collapse__icon {
+    font-size: 1.5rem;
+    font-weight: 700;
   }
 }/*# sourceMappingURL=Collapse.css.map */
