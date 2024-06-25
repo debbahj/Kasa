@@ -1,0 +1,40 @@
+@use '../../style/index' as *;
+
+.collapse {
+  &__button {
+    @include flex(row, space-between);
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    background-color: $primary-color;
+  }
+
+  &__title {
+    @include font(13px, $font-bold);
+  }
+
+  &__icon {
+    @include font($text-base, $font-bold);
+  }
+
+  &__content {
+    @include font($text-xs, $font-normal-collapse);
+    padding: 13px 20px 20px 20px;
+
+    @media (width > $tablet) {
+      @include font($text-lg, $font-normal-collapse);
+
+      padding: 16px 20px 20px 20px;
+    }
+  }
+}
+
+@media (width > $tablet) {
+  // fontsize
+  // padding
+  // height ?
+}

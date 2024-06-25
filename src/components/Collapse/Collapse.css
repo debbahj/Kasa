@@ -1,0 +1,34 @@
+.collapse__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  background-color: #ff6060;
+}
+.collapse__title {
+  font-size: 13px;
+  font-weight: 700;
+}
+.collapse__icon {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.collapse__content {
+  font-size: 0.75rem;
+  font-weight: 400;
+  padding: 13px 20px 20px 20px;
+}
+@media (width > 768px) {
+  .collapse__content {
+    font-size: 1.125rem;
+    font-weight: 400;
+    padding: 16px 20px 20px 20px;
+  }
+}/*# sourceMappingURL=Collapse.css.map */

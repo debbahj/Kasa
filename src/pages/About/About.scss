@@ -1,0 +1,6 @@
+@use '../../style/index' as *;
+
+.about-wrapper {
+  @include flex(column, normal, normal);
+  gap: 20px;
+}
