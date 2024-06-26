@@ -30,6 +30,7 @@
   &__content {
     @include font($text-xs, $font-normal-collapse);
     padding: 13px 20px 20px 20px;
+    background: $content-bg-color;
 
     @media (width > $tablet) {
       @include font($text-lg, $font-normal-collapse);
@@ -65,6 +66,7 @@
   .collapse {
     &-container {
       padding: 0 108px;
+      gap: 30px;
     }
 
     &__button {

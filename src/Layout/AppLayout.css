@@ -15,17 +15,20 @@
   flex: 1;
 }
 .app-layout .wrapper {
-  padding: 50px 100px;
   width: 100%;
-  gap: 50px;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
   flex: 1;
+  gap: 19px;
+  padding: 20px;
+  padding-bottom: 0;
 }
-@media (width < 768px) {
+@media (width > 768px) {
   .app-layout .wrapper {
-    padding: 20px;
+    padding: 40px 100px;
+    padding-bottom: 0;
+    gap: 38px;
   }
 }/*# sourceMappingURL=AppLayout.css.map */

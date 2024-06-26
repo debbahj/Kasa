@@ -10,7 +10,7 @@
 .header__logo {
   width: 100%;
   max-width: 145px;
-  height: 45px;
+  height: 47px;
 }
 .header__nav--list {
   display: flex;
@@ -27,6 +27,9 @@
 }
 
 @media (width > 768px) {
+  .header__logo {
+    height: 68px;
+  }
   .header__nav--list {
     font-size: 1.5rem;
     font-weight: 500;

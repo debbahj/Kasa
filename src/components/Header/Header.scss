@@ -8,7 +8,7 @@
   &__logo {
     width: 100%;
     max-width: 145px;
-    height: 45px;
+    height: 47px;
   }
 
   &__nav {
@@ -27,6 +27,10 @@
 
 @media (width > $tablet) {
   .header {
+    &__logo {
+      height: 68px;
+    }
+
     &__nav {
       &--list {
         @include font($text-2xl);
