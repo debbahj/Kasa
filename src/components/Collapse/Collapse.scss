@@ -1,15 +1,19 @@
 @use '../../style/index' as *;
 
+summary::-webkit-details-marker {
+  display: none;
+}
+
 .collapse {
   &-container {
     @include flex(column, normal, normal);
     gap: 20px;
   }
 
-  &__button {
+  &__title {
     @include flex(row, space-between);
+    @include font(13px, $font-bold);
     cursor: pointer;
-    width: 100%;
     height: 30px;
     padding: 10px;
     border: 0;
@@ -18,37 +22,44 @@
     background-color: $primary-color;
   }
 
-  &__title {
-    @include font(13px, $font-bold);
-  }
-
   &__icon {
     @include font($text-base, $font-bold);
-    transition: transform 0.3s;
+
+    details & {
+      transform: rotate(0deg);
+      transition: transform 0.5s;
+    }
+
+    details[open] & {
+      transform: rotate(-180deg);
+      transition: transform 0.5s;
+    }
   }
 
   &__content {
     @include font($text-xs, $font-normal-collapse);
     padding: 13px 20px 20px 20px;
-    background: $content-bg-color;
+
+    details & {
+      background-color: $content-bg-color;
+      animation: ShowContent .5s;
+    }
+
+    details[open] & {
+      position: relative;
+      top: -3px;
+      z-index: -1;
+      animation: ShowContent .5s;
+    }
 
     @media (width > $tablet) {
       @include font($text-lg, $font-normal-collapse);
-
       padding: 16px 20px 20px 20px;
     }
   }
 }
 
 // ANIMATIONS
-.anim-rotate {
-  transform: rotate(-180deg);
-}
-
-.collapse__content.anim-open {
-  animation: ShowContent 0.3s;
-}
-
 @keyframes ShowContent {
   from {
     opacity: 0;
@@ -69,13 +80,10 @@
       gap: 30px;
     }
 
-    &__button {
-      height: 52px;
-      padding: 10px 15px;
-    }
-
     &__title {
       @include font($text-2xl, $font-bold);
+      height: 52px;
+      padding: 10px 15px;
     }
 
     &__icon {
