@@ -3,42 +3,55 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 140px;
+  gap: 113px;
+  margin-top: 94px;
+  margin-bottom: 113px;
 }
 .error-404__img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 100px;
 }
 .error-404__text {
-  font-size: 2.25rem;
+  font-size: 1.125rem;
   font-weight: 500;
   color: #ff6060;
   text-align: center;
 }
 .error-404__link {
-  font-size: 1.125rem;
+  width: 100%;
+  height: 20px;
+  font-size: 0.875rem;
   font-weight: 500;
+  text-align: center;
   text-decoration: underline;
-  margin-bottom: 100px;
 }
 .error-404__link:visited {
   color: black;
 }
 
-@media (width < 768px) {
+@media (width > 768px) {
   .error-404 {
-    gap: 115px;
+    gap: 140px;
+    margin-top: 108px;
+    margin-bottom: 140px;
   }
   .error-404__img {
-    max-width: 200px;
+    width: 597px;
+    height: 263px;
   }
   .error-404__text {
-    font-size: 1.125rem;
+    font-size: 2.25rem;
     font-weight: 500;
   }
+  .error-404__text br {
+    display: none;
+  }
   .error-404__link {
-    font-size: 0.875rem;
+    font-size: 1.125rem;
     font-weight: 500;
   }
 }/*# sourceMappingURL=Error404.css.map */

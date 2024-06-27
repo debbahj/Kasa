@@ -10,7 +10,7 @@ function Error404() {
         alt="Page introuvable"
       />
       <p className="error-404__text">
-        Oups! La page que vous demandez n&apos;existe pas.
+        Oups! La page que <br /> vous demandez n&apos;existe pas.
       </p>
       <NavLink to="/" className="error-404__link">
         Retourner sur la page d&apos;accueil
