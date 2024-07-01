@@ -1,5 +1,7 @@
 @use '../../style/index' as *;
 
+//! TODO : PADDING TROP GRAND EN DESSOUS DES COLLAPSES QUE FAIRE ?
+
 summary::-webkit-details-marker {
   display: none;
 }

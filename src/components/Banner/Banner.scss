@@ -7,17 +7,20 @@
   border-radius: $banner-radius;
   box-shadow: $shadow;
   overflow: hidden;
+
   &__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
+
   &__title {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    padding-inline: 15px;
     @include flex();
     @include font($text-5xl, $font-bold);
     color: white;

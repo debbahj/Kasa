@@ -1,0 +1,12 @@
+@use '../../style/index' as *;
+
+.home {
+    @include flex(column, normal, normal);
+    gap: 20px;
+    margin-bottom: 20px;
+    
+    @media (width > $tablet) {
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+}

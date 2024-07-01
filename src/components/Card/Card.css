@@ -1,0 +1,50 @@
+.card {
+  position: relative;
+  width: 100%;
+  height: 255px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: normal;
+  align-items: normal;
+  gap: 20px;
+}
+@media (width > 768px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 60px;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: #f6f6f6;
+  }
+}
+.card__link {
+  border-radius: 10px;
+}
+.card__link:visited {
+  color: #fff;
+}
+.card__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.card__title {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  width: 90%;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-shadow: rgba(0, 0, 0, 0.2509803922) 0px 4px 4px, #000 0px 0px 1px;
+  -webkit-font-smoothing: antialiased;
+}/*# sourceMappingURL=Card.css.map */
