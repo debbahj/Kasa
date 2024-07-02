@@ -1,0 +1,71 @@
+@use '../../style/index' as *;
+
+.slider {
+  &-container {
+    position: relative;
+    width: 100%;
+    height: 255px;
+    border-radius: 10px;
+    overflow: hidden;
+    color: white;
+    background-color: $content-bg-color;
+
+    -webkit-font-smoothing: antialiased;
+
+    @media (width > $tablet) {
+      height: 415px;
+      border-radius: 25px;
+    }
+
+    &::before {
+      content: '\f053';
+      font-family: 'Font Awesome 6 Free';
+      font-size: 20px;
+      font-weight: 900;
+      position: absolute;
+      top: 50%;
+      left: 5px;
+      transform: translate(0, -50%);
+
+      @media (width > $tablet) {
+        font-size: 3em;
+        left: 25px;
+      }
+    }
+
+    &::after {
+      content: '\f054';
+      font-family: 'Font Awesome 6 Free';
+      font-size: 20px;
+      font-weight: 900;
+      position: absolute;
+      top: 50%;
+      right: 5px;
+      transform: translate(0, -50%);
+
+      @media (width > $tablet) {
+        font-size: 3em;
+        right: 25px;
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  &__index {
+    display: none;
+    position: absolute;
+    bottom: 25px;
+    right: 50%;
+    transform: translateX(50%);
+    @include font($text-lg);
+
+    @media (width > $tablet) {
+      display: block;
+    }
+  }
+}
