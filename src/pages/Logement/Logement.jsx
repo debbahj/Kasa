@@ -3,9 +3,13 @@ import useFetchLogements from '../../hooks/api/fetchLogements'
 
 const Logement = () => {
   const { id } = useParams()
-  const { logementsData } = useFetchLogements()
+  // const { logementsData } = useFetchLogements()
 
-  return <div>Logement</div>
+  return (
+    <>
+      <div>LogementID: {id}</div>
+    </>
+  )
 }
 
 export default Logement

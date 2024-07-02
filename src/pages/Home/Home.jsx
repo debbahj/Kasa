@@ -15,7 +15,7 @@ function Home() {
       {logementsData && (
         <div className="card-container">
           {logementsData.map((data) => (
-            <Card key={data.id} title={data.title} image={data.cover} />
+            <Card key={data.id} link={`logement/${data.id}`} title={data.title} image={data.cover} />
           ))}
         </div>
       )}
