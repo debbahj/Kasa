@@ -16,7 +16,9 @@ function About() {
       {aboutData && (
         <div className="collapse-container">
           {aboutData.map((data, index) => (
-            <Collapse key={index} title={data.title} content={data.content} />
+            <Collapse key={index} title={data.title}>
+              <p>{data.content}</p>
+            </Collapse>
           ))}
         </div>
       )}

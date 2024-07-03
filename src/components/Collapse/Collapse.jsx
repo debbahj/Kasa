@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import './Collapse.css'
 
-const Collapse = ({ title, content }) => {
+const Collapse = ({ title, children }) => {
   return (
     <details className="collapse">
       <summary className="collapse__title">
@@ -9,7 +9,7 @@ const Collapse = ({ title, content }) => {
         <i className="collapse__icon fas fa-chevron-up"></i>
       </summary>
       <div className="collapse__content">
-        <p>{content}</p>
+        {children}
       </div>
     </details>
   )
@@ -17,7 +17,7 @@ const Collapse = ({ title, content }) => {
 
 Collapse.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
 }
 
 export default Collapse
