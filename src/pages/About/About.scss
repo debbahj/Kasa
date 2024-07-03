@@ -2,5 +2,9 @@
 
 .about-wrapper {
   @include flex(column, normal, normal);
-  gap: 38px;
+  gap: 19px;
+
+  @media (width > $tablet) {
+    gap: 38px;
+  }
 }

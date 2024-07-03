@@ -14,9 +14,7 @@
     border-radius: 25px;
   }
 }
-.slider-container::before {
-  content: "\f053";
-  font-family: "Font Awesome 6 Free";
+.slider__arrow--left {
   font-size: 20px;
   font-weight: 900;
   position: absolute;
@@ -25,14 +23,12 @@
   transform: translate(0, -50%);
 }
 @media (width > 768px) {
-  .slider-container::before {
+  .slider__arrow--left {
     font-size: 3em;
     left: 25px;
   }
 }
-.slider-container::after {
-  content: "\f054";
-  font-family: "Font Awesome 6 Free";
+.slider__arrow--right {
   font-size: 20px;
   font-weight: 900;
   position: absolute;
@@ -41,14 +37,14 @@
   transform: translate(0, -50%);
 }
 @media (width > 768px) {
-  .slider-container::after {
+  .slider__arrow--right {
     font-size: 3em;
     right: 25px;
   }
 }
 .slider__image {
   width: 100%;
-  height: auto;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }

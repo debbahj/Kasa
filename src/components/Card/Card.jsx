@@ -16,10 +16,7 @@ const Card = ({ link, title, image }) => {
 Card.propTypes = {
   link: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  image: PropTypes.object.isRequired,
+  image: PropTypes.string.isRequired,
 }
-
-// TODO: <a> en <NabLink> ? vers quoi ? id ? ou definir dans <Home/> ?
-// TODO: Max-height 100vh met un outline (a voir en 4K sur browser)
 
 export default Card

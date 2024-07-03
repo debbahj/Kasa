@@ -5,10 +5,10 @@ const AppLayout = ({ header, main, footer }) => {
   return (
     <div className="app-layout">
       <div className="wrapper">
-        <header>{header}</header>
+        <header className='header'>{header}</header>
         <main>{main}</main>
       </div>
-      <footer>{footer}</footer>
+      <footer className="footer">{footer}</footer>
     </div>
   )
 }

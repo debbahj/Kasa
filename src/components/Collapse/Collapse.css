@@ -34,7 +34,6 @@ details .collapse__icon {
 }
 details[open] .collapse__icon {
   transform: rotate(-180deg);
-  transition: transform 0.5s;
 }
 .collapse__content {
   font-size: 0.75rem;
@@ -46,9 +45,6 @@ details .collapse__content {
   animation: ShowContent 0.5s;
 }
 details[open] .collapse__content {
-  position: relative;
-  top: -3px;
-  z-index: -1;
   animation: ShowContent 0.5s;
 }
 @media (width > 768px) {

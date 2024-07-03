@@ -1,10 +1,9 @@
 import './Header.scss'
 import { NavLink } from 'react-router-dom'
-const logo = './assets/images/logo.svg'
+const logo = '/assets/images/logo.svg'
 
 function Header() {
   return (
-    <header className="header">
       <div className="header__container">
         <img className="header__logo" src={logo} alt="Logo de Kasa" />
 
@@ -19,7 +18,6 @@ function Header() {
           </ul>
         </nav>
       </div>
-    </header>
   )
 }
 

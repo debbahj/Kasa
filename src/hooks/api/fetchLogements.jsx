@@ -5,7 +5,7 @@ const useFetchLogements = () => {
 
   useEffect(() => {
     const fetchAbout = async () => {
-      fetch('./assets/logements.json')
+      fetch('/assets/logements.json')
         .then((resp) => resp.json())
         .then((resp) => setLogementsData(resp))
     }

@@ -34,7 +34,6 @@ summary::-webkit-details-marker {
 
     details[open] & {
       transform: rotate(-180deg);
-      transition: transform 0.5s;
     }
   }
 
@@ -48,9 +47,9 @@ summary::-webkit-details-marker {
     }
 
     details[open] & {
-      position: relative;
-      top: -3px;
-      z-index: -1;
+      // position: relative;
+      // top: -3px;
+      // z-index: -1;
       animation: ShowContent .5s;
     }
 
