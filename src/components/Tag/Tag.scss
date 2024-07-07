@@ -1,0 +1,22 @@
+@use '../../style/index' as *;
+
+.tag {
+  display: inline-block;
+  min-width: fit-content;
+  min-width: 84px;
+  height: 18px;
+  padding: 3px 5px;
+  border: none;
+  border-radius: 10px;
+  @include font(0.625em, $font-bold);
+  text-align: center;
+  color: white;
+  background-color: $primary-color;
+  cursor: pointer;
+
+  @media (width > $tablet) {
+    @include font($text-sm);
+    min-width: 115px;
+    height: 25px;
+  }
+}
