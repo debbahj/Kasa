@@ -2,7 +2,6 @@
 
 .tag {
   display: inline-block;
-  min-width: fit-content;
   min-width: 84px;
   height: 18px;
   padding: 3px 5px;
@@ -18,5 +17,6 @@
     @include font($text-sm);
     min-width: 115px;
     height: 25px;
+    padding: 3px 12px;
   }
 }

@@ -66,6 +66,9 @@ details[open] .collapse__content {
   }
 }
 @media (width > 768px) {
+  .collapse {
+    width: 100%;
+  }
   .collapse-container {
     padding: 0 108px;
     gap: 30px;
@@ -73,8 +76,13 @@ details[open] .collapse__content {
   .collapse__title {
     font-size: 1.5rem;
     font-weight: 700;
-    height: 52px;
+    height: 54px;
     padding: 10px 15px;
+  }
+  .collapse__small {
+    font-size: 1.125rem;
+    font-weight: 700;
+    height: 52px;
   }
   .collapse__icon {
     font-size: 1.5rem;

@@ -43,14 +43,14 @@ summary::-webkit-details-marker {
 
     details & {
       background-color: $content-bg-color;
-      animation: ShowContent .5s;
+      animation: ShowContent 0.5s;
     }
 
     details[open] & {
       // position: relative;
       // top: -3px;
       // z-index: -1;
-      animation: ShowContent .5s;
+      animation: ShowContent 0.5s;
     }
 
     @media (width > $tablet) {
@@ -76,6 +76,7 @@ summary::-webkit-details-marker {
 // MEDIA QUERIES
 @media (width > $tablet) {
   .collapse {
+    width: 100%;
     &-container {
       padding: 0 108px;
       gap: 30px;
@@ -83,8 +84,13 @@ summary::-webkit-details-marker {
 
     &__title {
       @include font($text-2xl, $font-bold);
-      height: 52px;
+      height: 54px;
       padding: 10px 15px;
+    }
+
+    &__small {
+      @include font($text-lg, $font-bold);
+      height: 52px;
     }
 
     &__icon {

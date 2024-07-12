@@ -5,6 +5,7 @@
   align-items: center;
   width: 100%;
   min-height: 100dvh;
+  gap: 20px;
 }
 .app-layout header,
 .app-layout main,
@@ -26,6 +27,9 @@
   padding-bottom: 0;
 }
 @media (width > 768px) {
+  .app-layout {
+    gap: 50px;
+  }
   .app-layout .wrapper {
     padding: 40px 100px;
     padding-bottom: 0;

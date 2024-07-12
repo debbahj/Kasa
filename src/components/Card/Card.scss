@@ -7,6 +7,16 @@
   border-radius: $card-radius;
   overflow: hidden;
 
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  }
+
   &-container {
     @include flex(column, normal, normal);
     gap: 20px;
@@ -45,6 +55,7 @@
     bottom: 15px;
     left: 20px;
     width: 90%;
+    z-index: 1;
     @include font($text-lg, $font-bold);
     text-shadow: #00000040 0px 4px 4px, #000 0px 0px 1px;
 

@@ -1,18 +1,19 @@
 @use '../../style/index' as *;
 
 .logement {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  @media (width > $tablet) {
+    gap: 50px;
+  }
   &__container {
     @include flex(column, normal, normal);
     gap: 13px;
-    margin-top: 15px;
-    margin-bottom: 27px;
-    
-    
+
     @media (width > $tablet) {
       @include flex(column, normal, normal);
       gap: 24px;
-      margin-top: 24px;
-      margin-bottom: 50px;
     }
   }
 
@@ -27,12 +28,14 @@
   }
 
   &__info {
-
     &--title {
       @include font($text-lg);
       color: $primary-color;
 
       @media (width > $tablet) {
+        @include font($text-2xl);
+      }
+      @media (width > $desktop) {
         @include font($text-4xl);
       }
     }
@@ -47,6 +50,7 @@
 
     &--tags {
       @include flex(row, start);
+      flex-wrap: wrap;
       gap: 10px;
     }
   }
@@ -54,7 +58,7 @@
   &__profile {
     @include flex(row-reverse, space-between);
     width: 100%;
-    
+
     @media (width > $tablet) {
       @include flex(column, space-between, end);
       gap: 21px;
@@ -84,26 +88,6 @@
           height: 64px;
         }
       }
-
-      &-rating {
-        @include flex(row, normal, normal);
-        gap: 8px;
-        font-size: 13px;
-
-
-        .filled {
-          color: $primary-color
-        }
-        .empty {
-          color: rgba(227, 227, 227, 1);
-
-        }
-
-        @media (width > $tablet) {
-          gap: 16px;
-          font-size: 24px;
-        }
-      }
     }
   }
 
@@ -114,18 +98,12 @@
     @media (width > $tablet) {
       @include flex(row, center, normal);
     }
+  }
+}
 
-    .collapse {
-      width: 100%;
-
-      &__title {
-        @include font(13px, $font-bold);
-        
-        @media (width > $tablet) {
-          @include font($text-lg, $font-bold);
-          height: 52px;
-        }
-      }
-    }
+.firstupper {
+  text-transform: lowercase;
+  &::first-letter {
+    text-transform: uppercase;
   }
 }

@@ -4,11 +4,9 @@
   justify-content: normal;
   align-items: normal;
   gap: 20px;
-  margin-bottom: 20px;
 }
 @media (width > 768px) {
   .home {
     gap: 50px;
-    margin-bottom: 50px;
   }
 }/*# sourceMappingURL=Home.css.map */

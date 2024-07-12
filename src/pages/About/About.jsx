@@ -9,14 +9,14 @@ function About() {
   return (
     <div className="about-wrapper">
       <Banner
-        className={'less-darken'}
+        lessDarken={true}
         img={'./assets/images/banner-image-about.svg'}
         text={''}
       />
       {aboutData && (
         <div className="collapse-container">
           {aboutData.map((data, index) => (
-            <Collapse key={index} title={data.title}>
+            <Collapse key={`about-content-${index}`} title={data.title}>
               <p>{data.content}</p>
             </Collapse>
           ))}

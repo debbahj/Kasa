@@ -4,6 +4,7 @@
   @include flex(column, space-between);
   width: 100%;
   min-height: 100dvh;
+  gap: 20px;
 
   header,
   main,
@@ -14,6 +15,7 @@
   main {
     flex: 1;
   }
+
   & .wrapper {
     width: 100%;
     @include flex(column, start, center);
@@ -24,6 +26,7 @@
   }
 
   @media (width > $tablet) {
+    gap: 50px;
     .wrapper {
       padding: 40px 100px;
       padding-bottom: 0;
